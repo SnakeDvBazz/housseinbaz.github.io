@@ -27,7 +27,7 @@ body {
 .container-preloader .animation-preloader .spinner {
   animation: spinner 1s infinite linear;
 	border-radius: 50%;  border: 10px solid rgba(0, 0, 0, 0.2);
-  border-top-color: green; /* It is not in alphabetical order so that you do not overwrite it */
+  border-top-color: rgb(10, 148, 5); /* It is not in alphabetical order so that you do not overwrite it */
   height: 9em;  margin: 0 auto 3.5em auto; width: 9em;
 }
 /* Loading text */
@@ -36,7 +36,7 @@ body {
 	text-align: center;	user-select: none;
 }
 .container-preloader .animation-preloader .txt-loading .characters:before {
-  animation: characters 4s infinite;  color: orange;
+  animation: characters 4s infinite;  color: #3a6cf4;
   content: attr(preloader-text);  left: 0;
   opacity: 0;  position: absolute;  top: 0;
   transform: rotateY(-90deg);
@@ -140,42 +140,26 @@ font-size:45px;}
 				<div class="animation-preloader">
 					<div class="spinner"></div>
 					<div class="txt-loading">
-						<span preloader-text="S" class="characters">S</span>
+						<span preloader-text="H" class="characters">H</span>
 						
 						<span preloader-text="O" class="characters">O</span>
 						
-						<span preloader-text="F" class="characters">F</span>
+						<span preloader-text="U" class="characters">U</span>
 						
-						<span preloader-text="T" class="characters">T</span>
+						<span preloader-text="S" class="characters">S</span>
 						
-						<span preloader-text="D" class="characters">D</span>
+						<span preloader-text="S" class="characters">S</span>
 						
 						<span preloader-text="E" class="characters">E</span>
 						
-						<span preloader-text="V" class="characters">V</span>
+						<span preloader-text="I" class="characters">I</span>
+
+                        <span preloader-text="N" class="characters">N</span>
 					</div>
 				</div>	
 				<div class="loader-section section-left"></div>
 				<div class="loader-section section-right"></div>
 			</div>
 		</div>	
-<a class="origin" href="https://softcodeon.com/tutorials/how-to-add-preloader-in-html-page.htm">How to Add Preloader in HTML Page
-</a>
-<h1 class="text">We're Now <span class="open">OPEN</span></h1>
-</body>  
- 
- 
- <script>
-  $(document).ready(function() {
-  setTimeout(function() {
-    $('#container').addClass('loaded');
-    // Once the container has finished, the scroll appears
-    if ($('#container').hasClass('loaded')) {
-      // It is so that once the container is gone, the entire preloader section is deleted
-      $('#preloader').delay(9000).queue(function() {
-        $(this).remove();
-      });}
-  }, 3000);});
 
- </script>
 </html>
