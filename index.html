@@ -13,7 +13,14 @@
       /*BG IMAGE*/
 	body {
   background-image: url(https://i.postimg.cc/2ydmCdJ4/Picsart-22-12-29-12-46-23-345.jpg);
+  animation: chbg 36.5s infinite alternate;
   
+}
+@keyframes chbg {
+  100% {
+    background:url(https://i.postimg.cc/qvNy0m2n/Picsart-22-12-30-20-44-10-747.jpg);
+  
+  }
 }
 
 
@@ -491,7 +498,7 @@ span:hover{
 
 #gif {
 width:100%;
-height: 20%;
+height: 50%;
 align-items: center;
 display:none;
 }
@@ -528,11 +535,11 @@ display:none;
   <img id="gif" src="https://s9.gifyu.com/images/20221230_162518.gif">
 
 
-  <audio src="https://e.top4top.io/m_2555kx9rq0.mp3" id="my_audio" loop="loop"></audio>
+  <audio 
+  src="https://e.top4top.io/m_2555kx9rq0.mp3" id="my_audio" loop="loop"></audio>
   <script type="text/javascript">
     setTimeout(function(){
       document.getElementById("my_audio").play();
-      console.log('This audio clip will start now');
     }, 11000)
   </script>
 
